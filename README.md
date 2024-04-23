@@ -1,10 +1,9 @@
-[<img src="https://raw.githubusercontent.com/mineiros-io/brand/3bffd30e8bdbbde32c143e2650b2faa55f1df3ea/mineiros-primary-logo.svg" width="400"/>](https://mineiros.io/?ref=terraform-github-team)
+[<img src="https://repository-images.githubusercontent.com/662075696/23600e8a-7d2b-4f5c-aa58-afd28d01f056" width="400"/>](https://amach.com)
 
-[![Build Status](https://github.com/mineiros-io/terraform-github-team/workflows/CI/CD%20Pipeline/badge.svg)](https://github.com/mineiros-io/terraform-github-team/actions)
-[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/mineiros-io/terraform-github-team.svg?label=latest&sort=semver)](https://github.com/mineiros-io/terraform-github-team/releases)
+[![Build Status](https://github.com/amachsoftware/terraform-github-repository/workflows/CI/CD%20Pipeline/badge.svg)](https://github.com/amachsoftware/terraform-github-repository/actions)
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/amachsoftware/terraform-github-repository.svg?label=latest&sort=semver)](https://github.com/amachsoftware/terraform-github-repository/releases)
 [![Terraform Version](https://img.shields.io/badge/terraform-1.x-623CE4.svg?logo=terraform)](https://github.com/hashicorp/terraform/releases)
-[![Github Provider Version](https://img.shields.io/badge/GH-4.x-F8991D.svg?logo=terraform)](https://github.com/terraform-providers/terraform-provider-github/releases)
-[![Join Slack](https://img.shields.io/badge/slack-@mineiros--community-f32752.svg?logo=slack)](https://mineiros.io/slack)
+[![Github Provider Version](https://img.shields.io/badge/GH-4.10+-F8991D.svg?logo=terraform)](https://github.com/terraform-providers/terraform-provider-github/releases)
 
 # terraform-github-team
 
@@ -280,34 +279,35 @@ Run `make help` to see details on each available target.
 This module is licensed under the Apache License Version 2.0, January 2004.
 Please see [LICENSE] for full details.
 
-Copyright &copy; 2020-2022 [Mineiros GmbH][homepage]
+Copyright &copy; 2020-2022 [Mineiros GmbH][homepage], 2024 [Amach][homepage]
 
 
 <!-- References -->
 
-[homepage]: https://mineiros.io/?ref=terraform-github-team
-[github-as-code]: https://mineiros.io/github-as-code?ref=terraform-github-team
-[hello@mineiros.io]: mailto:hello@mineiros.io
-[badge-build]: https://github.com/mineiros-io/terraform-github-team/workflows/CI/CD%20Pipeline/badge.svg
-[badge-semver]: https://img.shields.io/github/v/tag/mineiros-io/terraform-github-team.svg?label=latest&sort=semver
+[github]: https://github.com/
+[`github_repository`]: https://www.terraform.io/docs/providers/github/r/repository.html#attributes-reference
+[`github_repository_collaborator`]: https://www.terraform.io/docs/providers/github/r/repository_collaborator.html#attribute-reference
+[`github_repository_deploy_key`]: https://www.terraform.io/docs/providers/github/r/repository_deploy_key.html#attributes-reference
+[`github_repository_project`]: https://www.terraform.io/docs/providers/github/r/repository_project.html#attributes-reference
+[`github_repository_autolink_reference`]: https://www.terraform.io/docs/providers/github/r/repository_autolink_reference.html#attributes-reference
+[homepage]: https://amach.com
+[badge-build]: https://github.com/amachsoftware/terraform-github-repository/workflows/CI/CD%20Pipeline/badge.svg
+[badge-semver]: https://img.shields.io/github/v/tag/amachsoftware/terraform-github-repository.svg?label=latest&sort=semver
 [badge-license]: https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg
 [badge-terraform]: https://img.shields.io/badge/terraform-1.x-623CE4.svg?logo=terraform
-[badge-slack]: https://img.shields.io/badge/slack-@mineiros--community-f32752.svg?logo=slack
-[build-status]: https://github.com/mineiros-io/terraform-github-team/actions
-[releases-github]: https://github.com/mineiros-io/terraform-github-team/releases
-[releases-terraform]: https://github.com/hashicorp/terraform/releases
-[badge-tf-gh]: https://img.shields.io/badge/GH-4.x-F8991D.svg?logo=terraform
+[badge-tf-gh]: https://img.shields.io/badge/GH-4.10+-F8991D.svg?logo=terraform
 [releases-github-provider]: https://github.com/terraform-providers/terraform-provider-github/releases
+[build-status]: https://github.com/amachsoftware/terraform-github-repository/actions
+[releases-github]: https://github.com/amachsoftware/terraform-github-repository/releases
+[releases-terraform]: https://github.com/hashicorp/terraform/releases
 [apache20]: https://opensource.org/licenses/Apache-2.0
-[slack]: https://join.slack.com/t/mineiros-community/shared_invite/zt-ehidestg-aLGoIENLVs6tvwJ11w9WGg
 [terraform]: https://www.terraform.io
 [aws]: https://aws.amazon.com/
 [semantic versioning (semver)]: https://semver.org/
-[variables.tf]: https://github.com/mineiros-io/terraform-github-team/blob/main/variables.tf
-[examples/]: https://github.com/mineiros-io/terraform-github-team/tree/main/examples
-[issues]: https://github.com/mineiros-io/terraform-github-team/issues
-[license]: https://github.com/mineiros-io/terraform-github-team/blob/main/LICENSE
-[makefile]: https://github.com/mineiros-io/terraform-github-team/blob/main/Makefile
-[pull requests]: https://github.com/mineiros-io/terraform-github-team/pulls
-[contribution guidelines]: https://github.com/mineiros-io/terraform-github-team/blob/main/CONTRIBUTING.md
-[github teams]: https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/organizing-members-into-teams
+[variables.tf]: https://github.com/amachsoftware/terraform-github-repository/blob/main/variables.tf
+[examples/]: https://github.com/amachsoftware/terraform-github-repository/blob/main/examples
+[issues]: https://github.com/amachsoftware/terraform-github-repository/issues
+[license]: https://github.com/amachsoftware/terraform-github-repository/blob/main/LICENSE
+[makefile]: https://github.com/amachsoftware/terraform-github-repository/blob/main/Makefile
+[pull requests]: https://github.com/amachsoftware/terraform-github-repository/pulls
+[contribution guidelines]: https://github.com/amachsoftware/terraform-github-repository/blob/main/CONTRIBUTING.md
