@@ -1,16 +1,16 @@
 header {
-  image = "https://raw.githubusercontent.com/mineiros-io/brand/3bffd30e8bdbbde32c143e2650b2faa55f1df3ea/mineiros-primary-logo.svg"
-  url   = "https://mineiros.io/?ref=terraform-github-team"
+  image = "https://repository-images.githubusercontent.com/662075696/23600e8a-7d2b-4f5c-aa58-afd28d01f056"
+  url   = "https://amach.com"
 
   badge "build" {
-    image = "https://github.com/mineiros-io/terraform-github-team/workflows/CI/CD%20Pipeline/badge.svg"
-    url   = "https://github.com/mineiros-io/terraform-github-team/actions"
+    image = "https://github.com/amachsoftware/terraform-github-team/workflows/CI/CD%20Pipeline/badge.svg"
+    url   = "https://github.com/amachsoftware/terraform-github-team/actions"
     text  = "Build Status"
   }
 
   badge "semver)" {
-    image = "https://img.shields.io/github/v/tag/mineiros-io/terraform-github-team.svg?label=latest&sort=semver"
-    url   = "https://github.com/mineiros-io/terraform-github-team/releases"
+    image = "https://img.shields.io/github/v/tag/amachsoftware/terraform-github-team.svg?label=latest&sort=semver"
+    url   = "https://github.com/amachsoftware/terraform-github-team/releases"
     text  = "GitHub tag (latest SemVer)"
   }
 
@@ -21,15 +21,9 @@ header {
   }
 
   badge "tf-gh" {
-    image = "https://img.shields.io/badge/GH-4.x-F8991D.svg?logo=terraform"
+    image = "https://img.shields.io/badge/GH-4.10+-F8991D.svg?logo=terraform"
     url   = "https://github.com/terraform-providers/terraform-provider-github/releases"
     text  = "Github Provider Version"
-  }
-
-  badge "slack" {
-    image = "https://img.shields.io/badge/slack-@mineiros--community-f32752.svg?logo=slack"
-    url   = "https://mineiros.io/slack"
-    text  = "Join Slack"
   }
 }
 
@@ -390,26 +384,38 @@ section {
       This module is licensed under the Apache License Version 2.0, January 2004.
       Please see [LICENSE] for full details.
 
-      Copyright &copy; 2020-2022 [Mineiros GmbH][homepage]
+      Copyright &copy; 2020-2022 [Mineiros GmbH][homepage], 2024 [Amach][homepage]
     END
   }
 }
 
 references {
+  ref "github" {
+    value = "https://github.com/"
+  }
+  ref "`github_repository`" {
+    value = "https://www.terraform.io/docs/providers/github/r/repository.html#attributes-reference"
+  }
+  ref "`github_repository_collaborator`" {
+    value = "https://www.terraform.io/docs/providers/github/r/repository_collaborator.html#attribute-reference"
+  }
+  ref "`github_repository_deploy_key`" {
+    value = "https://www.terraform.io/docs/providers/github/r/repository_deploy_key.html#attributes-reference"
+  }
+  ref "`github_repository_project`" {
+    value = "https://www.terraform.io/docs/providers/github/r/repository_project.html#attributes-reference"
+  }
+  ref "`github_repository_autolink_reference`" {
+    value = "https://www.terraform.io/docs/providers/github/r/repository_autolink_reference.html#attributes-reference"
+  }
   ref "homepage" {
-    value = "https://mineiros.io/?ref=terraform-github-team"
-  }
-  ref "github-as-code" {
-    value = "https://mineiros.io/github-as-code?ref=terraform-github-team"
-  }
-  ref "hello@mineiros.io" {
-    value = "mailto:hello@mineiros.io"
+    value = "https://amach.com"
   }
   ref "badge-build" {
-    value = "https://github.com/mineiros-io/terraform-github-team/workflows/CI/CD%20Pipeline/badge.svg"
+    value = "https://github.com/amachsoftware/terraform-github-team/workflows/CI/CD%20Pipeline/badge.svg"
   }
   ref "badge-semver" {
-    value = "https://img.shields.io/github/v/tag/mineiros-io/terraform-github-team.svg?label=latest&sort=semver"
+    value = "https://img.shields.io/github/v/tag/amachsoftware/terraform-github-team.svg?label=latest&sort=semver"
   }
   ref "badge-license" {
     value = "https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg"
@@ -417,29 +423,23 @@ references {
   ref "badge-terraform" {
     value = "https://img.shields.io/badge/terraform-1.x-623CE4.svg?logo=terraform"
   }
-  ref "badge-slack" {
-    value = "https://img.shields.io/badge/slack-@mineiros--community-f32752.svg?logo=slack"
-  }
-  ref "build-status" {
-    value = "https://github.com/mineiros-io/terraform-github-team/actions"
-  }
-  ref "releases-github" {
-    value = "https://github.com/mineiros-io/terraform-github-team/releases"
-  }
-  ref "releases-terraform" {
-    value = "https://github.com/hashicorp/terraform/releases"
-  }
   ref "badge-tf-gh" {
-    value = "https://img.shields.io/badge/GH-4.x-F8991D.svg?logo=terraform"
+    value = "https://img.shields.io/badge/GH-4.10+-F8991D.svg?logo=terraform"
   }
   ref "releases-github-provider" {
     value = "https://github.com/terraform-providers/terraform-provider-github/releases"
   }
+  ref "build-status" {
+    value = "https://github.com/amachsoftware/terraform-github-team/actions"
+  }
+  ref "releases-github" {
+    value = "https://github.com/amachsoftware/terraform-github-team/releases"
+  }
+  ref "releases-terraform" {
+    value = "https://github.com/hashicorp/terraform/releases"
+  }
   ref "apache20" {
     value = "https://opensource.org/licenses/Apache-2.0"
-  }
-  ref "slack" {
-    value = "https://join.slack.com/t/mineiros-community/shared_invite/zt-ehidestg-aLGoIENLVs6tvwJ11w9WGg"
   }
   ref "terraform" {
     value = "https://www.terraform.io"
@@ -451,27 +451,24 @@ references {
     value = "https://semver.org/"
   }
   ref "variables.tf" {
-    value = "https://github.com/mineiros-io/terraform-github-team/blob/main/variables.tf"
+    value = "https://github.com/amachsoftware/terraform-github-team/blob/main/variables.tf"
   }
   ref "examples/" {
-    value = "https://github.com/mineiros-io/terraform-github-team/tree/main/examples"
+    value = "https://github.com/amachsoftware/terraform-github-team/blob/main/examples"
   }
   ref "issues" {
-    value = "https://github.com/mineiros-io/terraform-github-team/issues"
+    value = "https://github.com/amachsoftware/terraform-github-team/issues"
   }
   ref "license" {
-    value = "https://github.com/mineiros-io/terraform-github-team/blob/main/LICENSE"
+    value = "https://github.com/amachsoftware/terraform-github-team/blob/main/LICENSE"
   }
   ref "makefile" {
-    value = "https://github.com/mineiros-io/terraform-github-team/blob/main/Makefile"
+    value = "https://github.com/amachsoftware/terraform-github-team/blob/main/Makefile"
   }
   ref "pull requests" {
-    value = "https://github.com/mineiros-io/terraform-github-team/pulls"
+    value = "https://github.com/amachsoftware/terraform-github-team/pulls"
   }
   ref "contribution guidelines" {
-    value = "https://github.com/mineiros-io/terraform-github-team/blob/main/CONTRIBUTING.md"
-  }
-  ref "github teams" {
-    value = "https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/organizing-members-into-teams"
+    value = "https://github.com/amachsoftware/terraform-github-team/blob/main/CONTRIBUTING.md"
   }
 }
